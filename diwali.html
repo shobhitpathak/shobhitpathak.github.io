@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diwali Wishes</title>
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Open+Sans" rel="stylesheet">
+	<style type="text/css">
+	body {
+		font-family: 'Open Sans', sans-serif;
+		color: #fff;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		text-align: center;
+		margin: 0 auto;
+		background: url('https://upload.wikimedia.org/wikipedia/commons/9/99/The_Rangoli_of_Lights.jpg');
+	}
+	h1 {
+		font-family: 'Gloria Hallelujah', cursive;
+		font-size: 80px;
+	}
+	main {
+		font-size: 36px;
+	}
+	mark {
+		font-size: 48px;
+		color: rgba(255, 255, 255, 0.8);
+		background: rgba(0, 0, 0, 0.2);
+	}
+	</style>
+</head>
+<body>
+	<h1 id="wishes">Happy Diwali</h1>
+
+	<main>
+	May this diwali bring joys and fun and luck to you and everyone you know.<br/>
+	May this message find you in the best of the conditions.<br/>
+	May you bring Joy to your Family and win laurels for yourself.<br/>
+	May you grow Leaps and bounds in times to come<br/>
+	May you present yourseld as an example to others.<br/>
+	May you achieve what your heart desires the most.<br/>
+	<mark>May these be the happiest times, Happy Diwali</mark>
+	</main>
+	<script type="text/javascript">
+		var url = window.location.href;
+		//var params = url.split('?');
+		var params = window.location.search.substring(1)
+		console.log(params.split('+'));
+		d = document.getElementById('wishes');
+		d.innerHTML += ' ' + params.replace('+', ' ')
+	</script>
+</body>
+</html>
